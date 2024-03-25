@@ -18,11 +18,10 @@ app.use(express_1.default.json());
 app.use(cors());
 app.use((0, morgan_1.default)("dev"));
 app.use(cookieParser());
-app.use("/api/v1", hello_route);
 app.use("/api/v1/events", require("./routes/event-route"));
 app.use("/api-docs", swagger_ui_express_1.default.serve, swagger_ui_express_1.default.setup(swagger_config_1.specs, { explorer: true }));
 app.get("/", (req, res) => {
-    res.send("Hello World!");
+    res.send("Api is Working!!!");
 });
 const start = () => {
     try {
