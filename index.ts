@@ -14,7 +14,7 @@ app.use(cors());
 app.use(logger("dev"));
 
 app.use(cookieParser());
-app.use("/api/v1", hello_route);
+
 app.use("/api/v1/events", require("./routes/event-route"));
 app.use(
   "/api-docs",
@@ -23,7 +23,7 @@ app.use(
 );
 
 app.get("/", (req: Request, res: Response) => {
-  res.send("Hello World!");
+  res.send("Api is Working!!!");
 });
 
 const start = (): void => {
