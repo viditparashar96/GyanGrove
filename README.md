@@ -53,6 +53,7 @@ This repository contains the source code for an Event Management API developed u
 
 # Test Case Execution Screenshots
 
+![alt text](image-1.png)
 ![alt text](image.png)
 ![alt text](screenshot1.png)
 
